@@ -14,7 +14,6 @@ const HomePage = () => {
   useEffect(() => {
     history.listen((location) => {
       dispatch(clearMessage());
-      window.location.reload();
     });
   }, [dispatch]);
 
